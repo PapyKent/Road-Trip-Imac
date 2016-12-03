@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "maxwell";
+    src: url('../ressources/fonts/maxwell/MAXWELL REGULAR.ttf');
+}
+@font-face {
+    font-family: "maxwell-bold";
+    src: url('../ressources/fonts/maxwell/MAXWELL BOLD.ttf');
+}
+
+body {
+    font-family: 'maxwell', sans-serif;
+    padding-top: 0px;
+}
+
+
+.menu {
+    z-index:11;
+    position:fixed;
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 30px;
+    font-size: 110%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.menu ul {
+    margin-bottom: 0;
+}
+
+
+.menu a {
+    text-transform: uppercase;
+    opacity: 0.8;
+    color:white;
+    font-weight: normal;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+   padding-bottom: 10px;
+}
+.menu a:hover {
+    opacity: 1;
+    text-decoration: NONE;
+    font-weight: bold;
+    transition: all 0.3s;
+    border-bottom: 1px solid #fff; /*attention sale*/
+    padding-bottom: 3px;
+}
+
+.menuActive  {
+   border-bottom: 1px solid #fff;/*attention sale*/
+   padding-bottom: 3px;
+   opacity :1 !important; /*important sale*/
+   font-weight: bold !important;
+
+
+}
+
+
