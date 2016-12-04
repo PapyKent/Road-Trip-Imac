@@ -75,12 +75,26 @@ p{
 	position: relative;
 	width: 100vw;
     padding-top: 50px;
-    background: url(../ressources/pics/eur-cent-top.jpg) no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+#it1{
+      background: url(../ressources/pics//EuropeCentrale/2.jpg) no-repeat;
+
+}
+
+#it2{
+      background: url(../ressources/pics/EuropeNord/2.jpg) no-repeat;
+
+}
+
+#it3{
+      background: url(../ressources/pics/EuropeOuest/1.jpg) no-repeat;
+
+}
+
 .top-content::after{
 	width: 100%;
 	height: 100%;
