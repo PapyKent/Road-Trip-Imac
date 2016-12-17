@@ -21,20 +21,6 @@ body{
   background-color: white;
 }
 
-/*p{
-  color:black;
-}
-
-.container p {
-
-  font-size: 150%;
-}
-
-.container img {
-  width:100%;
-}
-
-*/
 
 .parallax {
   background-image: url("../ressources/pics/1.jpg");
@@ -48,28 +34,51 @@ body{
 }
 
 @media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-    }
+  .parallax {
+      background-attachment: scroll;
+  }
 }
 
 
 .caption {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    height: 400px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 400px;
 }
 
 .caption span.title {
-    color: #fff;
-    font-size: 450%;
-    letter-spacing: 5px;
-    font-family: "MAXWELL BOLD";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 450%;
+  letter-spacing: 5px;
+  font-family: "MAXWELL BOLD";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+h3 {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #182a44;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "LeagueGothic";
+  font-size:300%
+}
+
+h5 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #182a44;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: "LeagueGothic";
+  font-size: 150%
 }
 
 
@@ -82,35 +91,23 @@ body{
 
 .intro p {
   padding-top: 50px;
-  font-size: 150%;
-}
-
-h3 {
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  color: #182a44;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-family: "LeagueGothic";
-  font-size:300%
+  font-size: 135%;
+  letter-spacing: 1.5px;
 }
 
 
 .guide {
-  color: #777;
   background-color:white;
-  padding:20px 250px;
+  padding:0px 250px;
 }
 
 .guide figure {
+  position: relative;
   display: inline-block;
   height: 300px;
   width: 300px;
   text-align: left;
   margin: 29px;
-  border: 1px solid #cfcfcf;
-
 }
  
 .guide figure img {
@@ -118,6 +115,14 @@ h3 {
   height: 200px;
   margin: 0px;
   padding: 0px;
+  overflow: hidden;
+}
+
+.guide figure figcaption {
+  position: absolute;
+  padding-top: 8%;
+  font-size: 120%;
+  letter-spacing: 1.5px;
 }
 
 .guide figure span.titleLgd {
@@ -125,11 +130,36 @@ h3 {
   font-size: 150%;
   color: #182a44;
   letter-spacing: 2px;
-  margin-top: 10px;
 }
 
-.guide figure figcation {
+
+.page{
+  text-align: center;
+  margin: 70px;
+  font-size: 120%;
 }
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #182a44;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 
 /*.top-content{

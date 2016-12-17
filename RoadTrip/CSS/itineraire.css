@@ -74,7 +74,7 @@ p{
 .top-content{
 	position: relative;
 	width: 100vw;
-    padding-top: 50px;
+  padding-top: 50px;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
