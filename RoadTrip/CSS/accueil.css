@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "MAXWELL REGULAR";
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans.ttf');
+}
+@font-face {
+  font-family: "MAXWELL LIGHT";
+  src: url('../ressources/fonts/maxwell/MAXWELL LIGHT.ttf');
+}
+@font-face {
+  font-family: "MAXWELL BOLD";
+  src: url('../ressources/fonts/maxwell/MAXWELL BOLD.ttf');
+}
+
+@font-face {
+  font-family: "LeagueGothic";
+  src: url('../ressources/fonts/LeagueGothic/League_Gothic.otf');
+}
+
+
+body{
+  background-color: white;
+}
+
+#para1{
+  background-image: url("../ressources/pics/16V2.jpg");
+}
+
+#para2{
+  background-image: url("../ressources/pics/20V2.jpg");
+}
+
+#para3{
+  background-image: url("../ressources/pics/17V2.jpg");
+}
+
+
+.parallax {
+  
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 400px;
+
+}
+
+
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+
+.caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+}
+
+.caption span.quote {
+ color: #fff;
+  font-size: 145%;
+  letter-spacing: 2px;
+  font-family: "MAXWELL REGULAR";
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.caption span.autor {
+  color: #fff;
+  font-size: 160%;
+  letter-spacing: 5px;
+  font-family: "MAXWELL LIGHT";
+  text-align: right;
+  position: absolute;
+  top: 95%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+
+.caption span.title {
+  color: #fff;
+  font-size: 450%;
+  letter-spacing: 5px;
+  font-family: "MAXWELL bold";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+h3 {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #182a44;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "LeagueGothic";
+  font-size:300%
+}
+
+h5 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #182a44;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: "LeagueGothic";
+  font-size: 150%
+}
+
+
+
+.lastArticles {
+  padding-top:3%  ;
+  padding-bottom:3%  ;
+  background-color:white;
+  margin-left: 2% ;
+  margin-right: 2% ;
+}
+
+.lastArticles figure {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  text-align: left;
+  margin: 29px;
+}
+ 
+.lastArticles figure img {
+  width: 300px;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.lastArticles figure figcaption {
+  position: absolute;
+  padding-top: 8%;
+  font-size: 120%;
+  letter-spacing: 1.5px;
+}
+
+.lastArticles figure span.titleLgd {
+  font-family: "LeagueGothic";
+  font-size: 150%;
+  color: #182a44;
+  letter-spacing: 2px;
+}
+
+
