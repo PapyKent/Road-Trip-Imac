@@ -92,7 +92,7 @@ h5 {
 .intro p {
   padding-top: 50px;
   font-size: 135%;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 
@@ -118,11 +118,18 @@ h5 {
   overflow: hidden;
 }
 
+.guide figure img:hover {
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3); 
+}
+
 .guide figure figcaption {
   position: absolute;
   padding-top: 8%;
   font-size: 120%;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .guide figure span.titleLgd {
