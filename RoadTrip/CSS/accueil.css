@@ -16,6 +16,9 @@
   src: url('../ressources/fonts/LeagueGothic/League_Gothic.otf');
 }
 
+.sep{
+  height:40px;
+}
 
 body{
   background-color: white;
