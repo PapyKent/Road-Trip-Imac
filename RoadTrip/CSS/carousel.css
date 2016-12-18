@@ -38,8 +38,8 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 100%;
-
+  width:100%;
+  height:100vh;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -48,20 +48,46 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 100vh;
+
+    height:100vh;
   background-color: #777;
 }
 .carousel-inner > .item > img {
+
   position: absolute;
   min-width:100%;
-  min-height: 100%;
-  width:auto;
+  width:100%;
   height:auto;
   display: block;
-  top: 0;
+  bottom:0;
   left: 0; 
+
 }
 
+.carousel--mobile{
+  display:inline;
+  position:relative;
+
+}
+
+.carousel--mobile img{
+  width:100%;
+  margin-top: 5%;
+
+}
+
+@media screen and (min-width: 1200px) {
+   .carousel--mobile  {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 1200px) {
+   .carousel  {
+      display: none;
+   }
+}
 
 
 /* MARKETING CONTENT
