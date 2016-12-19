@@ -18,7 +18,7 @@ body {
     position:fixed;
     display: block;
     width: 100%;
-    padding: 10px 10px 10px;
+    padding: 1px 10px 1px;
     margin: 0 auto;
     text-align: center;
     letter-spacing: 3px;
@@ -29,8 +29,13 @@ body {
 }
 .menu ul {
     margin-bottom: 0;
+    margin-left: -300px;
 }
 
+.menu ul li img {
+    padding-right: 170px;
+    left:0;
+}
 
 .menu a {
     text-transform: uppercase;
@@ -41,7 +46,7 @@ body {
     border-bottom: 1px solid transparent;
    padding-bottom: 10px;
 }
-.menu a:hover {
+.menu  a:hover {
     opacity: 1;
     text-decoration: NONE;
     font-weight: bold;
@@ -50,13 +55,15 @@ body {
     padding-bottom: 3px;
 }
 
+.menu img:hover {
+    opacity: 0.8;
+}
+
 .menuActive  {
    border-bottom: 1px solid #fff;/*attention sale*/
    padding-bottom: 3px;
    opacity :1 !important; /*important sale*/
    font-weight: bold !important;
-
-
 }
 
 

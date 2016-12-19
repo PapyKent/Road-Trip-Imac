@@ -60,14 +60,12 @@ body{
 
 
 h3 {
-  letter-spacing: 7px;
-  text-transform: uppercase;
-  color: #182a44;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  font-size:350%;
   font-family: "LeagueGothic";
-  font-size:300%
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h5 {
