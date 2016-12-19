@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "MAXWELL REGULAR";
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans.ttf');
+}
+@font-face {
+  font-family: "MAXWELL LIGHT";
+  src: url('../ressources/fonts/maxwell/MAXWELL LIGHT.ttf');
+}
+@font-face {
+  font-family: "MAXWELL BOLD";
+  src: url('../ressources/fonts/maxwell/MAXWELL BOLD.ttf');
+}
+
+@font-face {
+  font-family: "LeagueGothic";
+  src: url('../ressources/fonts/LeagueGothic/League_Gothic.otf');
+}
+
+
+body{
+  background-color: white;
+}
+
+#para1{
+  background-image: url("../ressources/pics/20V2.jpg");
+}
+
+
+
+
+.parallax {
+  
+  height: 500px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 400px;
+
+}
+
+
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+
+.caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+}
+
+.caption span.quote {
+ color: #fff;
+  font-size: 145%;
+  letter-spacing: 2px;
+  font-family: "MAXWELL REGULAR";
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.caption span.autor {
+  color: #fff;
+  font-size: 160%;
+  letter-spacing: 5px;
+  font-family: "MAXWELL LIGHT";
+  text-align: right;
+  position: absolute;
+  top: 95%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+
+.caption span.title {
+  color: #fff;
+  font-size: 450%;
+  letter-spacing: 5px;
+  font-family: "MAXWELL bold";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+h3 {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #182a44;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "LeagueGothic";
+  font-size:300%
+}
+
+h5 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #182a44;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: "LeagueGothic";
+  font-size: 150%
+}
+
+
+
+.top-head{
+  margin-top: 3%;
+  margin-bottom: 60px;
+  font-size:350%;
+  font-family: "LeagueGothic";
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+
+
+.top-head:before,
+.top-head:after {
+    background-color: #FFF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+
+}
+.top-head:before {
+    right: 0.5em;
+    margin-left: -200%;
+     background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+.top-head:after {
+   background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,1));
+    left: 0.5em;
+    margin-right: -200%;
+}
+
+
+
+
+.content{
+  width:60%;
+  margin-left: 20%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.content {
+  display: table;
+   margin-top:30px;
+   letter-spacing: 2px;
+  
+}
+
+.content img {
+  vertical-align: middle;
+  display: table-cell;
+  width:600px;
+  height: auto;
+  margin-right: 10%;
+
+}
+.content .resume {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+
+.resume h4{
+  margin-top: 5%;
+  margin-bottom: 5%;
+   font-size:210%;
+  font-family: "MAXWELL BOLD";
+}
+
+.resume p{
+   font-size:140%;
+    font-family: "MAXWELL REGULAR";
+}
+
+.arrow{
+ margin-top: 40%;
+}
