@@ -94,51 +94,105 @@ h5 {
   font-size: 135%;
   letter-spacing: 1px;
 }
+/*-----------------------------------------------------------------------*/
 
-
-.guide {
-  background-color:white;
-  padding:0px 250px;
+.photo-grid {
+  margin: 3em auto;
+  max-width: 1106px;
+  text-align: center;
 }
 
-.guide figure {
-  position: relative;
+.photo-grid li {
+  border: 5px solid white;
   display: inline-block;
-  height: 300px;
-  width: 300px;
+  margin: 2em;
+  width: 289px;
+}
+
+.photo-grid li:hover img {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.photo-grid img {
+  display: block;
+  height: auto;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  max-width: 100%;
+}
+
+.photo-grid .legende {
+  margin-top: 30px;
   text-align: left;
-  margin: 29px;
-}
- 
-.guide figure img {
-  width: 300px;
-  height: 200px;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
 }
 
-.guide figure img:hover {
-  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
-  -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.3); 
-}
 
-.guide figure figcaption {
-  position: absolute;
-  padding-top: 8%;
-  font-size: 120%;
-  letter-spacing: 1px;
-}
-
-.guide figure span.titleLgd {
+.photo-grid .legende span.lgd {
   font-family: "LeagueGothic";
   font-size: 150%;
   color: #182a44;
   letter-spacing: 2px;
+  text-align: left;
 }
 
+.photo-grid .legende p {
+  font-size: 120%;
+  color: #182a44;
+  letter-spacing: 1.5px;
+  font-family: "MAXWELL REGULAR";
+}
+
+.photo-grid figure {
+  height: 163px;
+  overflow: hidden;
+  position: relative;
+  width: 289px;
+}
+
+.photo-grid figcaption {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: table;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transition-delay: 100ms;
+  -moz-transition-delay: 100ms;
+  transition-delay: 100ms;
+  z-index: 100;
+}
+
+.photo-grid figcaption p {
+  display: table-cell;
+  font-size: 1.5em;
+  position: relative;
+  top: -40px;
+  width: 289px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+  -moz-transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+
+.photo-grid li:hover figcaption {
+  opacity: 1;
+}
+/*--------------------------------------------------------------*/
 
 .page{
   text-align: center;
